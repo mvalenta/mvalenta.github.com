@@ -1,17 +1,13 @@
 ---
 layout: default
-title: Jamie Countryman
+title: Jamie Countryman - Projects
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% if site.posts == empty %}
-      <li>No posts yet</li>
-    {% else %}
-      {% for post in site.posts %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    {% endif %}
-  </ul>
+<div id="projects">
+    <h1>Projects</h1>
+    <ul class="posts">
+        <li><a href="/projects/pastebin-for-android/">Pastebin for Android</a></li>
+        <li><a href="/projects/locale-dock-condition/">Locale Dock Condition</a></li>
+        <li><a href="/projects/locale-lockscreen-plugin/">Locale Lockscreen Plugin</a></li>
+    </ul>
 </div>
